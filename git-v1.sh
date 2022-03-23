@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 #set -e
 
 # change a commit comment
@@ -11,7 +11,7 @@ echo "Checking for newer files online first"
 git pull
 
 cd x86_64
-sh ./update_repo.sh
+sh ./build-db.sh
 # Below command will backup everything inside the project folder
 cd ..
 git add --all .
