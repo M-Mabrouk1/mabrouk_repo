@@ -10,18 +10,19 @@
 echo "Checking for newer files online first"
 git pull
 
-cd x86_64
 sh ./build-db.sh
+cd x86_64
 # Below command will backup everything inside the project folder
 cd ..
 git add --all .
 
-# Give a comment to the commit if you want
-#echo "####################################"
-#echo "Write your commit comment!"
-#echo "####################################"
+Give a comment to the commit if you want
+echo "####################################"
+echo "Write your commit comment!"
+echo "####################################"
 
-input="update"
+# input="update"
+read input
 
 # Committing to the local repository with a message containing the time details and commit text
 
