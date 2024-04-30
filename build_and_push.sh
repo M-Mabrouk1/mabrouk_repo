@@ -16,7 +16,7 @@ cd x86_64
 cd ..
 git add --all .
 
-Give a comment to the commit if you want
+# Give a comment to the commit if you want
 echo "####################################"
 echo "Write your commit comment!"
 echo "####################################"
